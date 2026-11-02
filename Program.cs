@@ -24,29 +24,29 @@ class Program
             BONUS 2 : enregistrer l'ensemble du butin trouvé et l'afficher à la fin
          */
         Console.WriteLine("combien de wagon voulez vous cherchez ?");
-        int WagontoSearch = Convert.ToInt32(Console.ReadLine());
-        int SafeNumber = 3;
-        int Check = 0;
-        int SearchedWagon = 0;
-        int Gold = 0;
-        Console.WriteLine("vous allez fouiller " + WagontoSearch + " wagons.");
-        while (WagontoSearch > Check);
+        int wagontoSearch = Convert.ToInt32(Console.ReadLine());
+        int safeNumber = 3;
+        int check = 0;
+        int searchedWagon = 0;
+        int gold = 0;
+        Console.WriteLine("vous allez fouiller " + wagontoSearch + " wagons.");
+        while (wagontoSearch > check) 
         {
-            SearchedWagon++;
+            searchedWagon++;
 
             int SearchedSafe = 0;
             do
             {
                 SearchedSafe++;
-                Console.WriteLine("wagon " + SearchedWagon + " -Coffre " + SearchedSafe + " inspecte.");
-                Gold++;
-            } while (SearchedSafe < SafeNumber);            
+                Console.WriteLine("wagon " + searchedWagon + " -Coffre " + SearchedSafe + " inspecte.");
+                gold++;
+            } while (SearchedSafe < safeNumber);            
 
 
-            Check++;
+            check++;
         }
 
-        Console.WriteLine("vous avez fouille " + SearchedWagon + " et " + SearchedWagon * SafeNumber + " coffre, vous avez amasse; " + Gold);
+        Console.WriteLine("vous avez fouille " + searchedWagon + " et " + searchedWagon * safeNumber + " coffre, vous avez amasse; " + gold);
 
     }
 }
