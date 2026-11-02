@@ -29,7 +29,7 @@ class Program
         int Check = 0;
         int SearchedWagon = 0;
         int Gold = 0;
-        Console.WriteLine("vous allez fouille " + WagontoSearch + " wagons.");
+        Console.WriteLine("vous allez fouiller " + WagontoSearch + " wagons.");
         while (WagontoSearch > Check);
         {
             SearchedWagon++;
